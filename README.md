@@ -4,11 +4,11 @@ Deep Rock Galactic mod that announces resupply pickups to the team with a fully 
 
 深岩银河模组：按一句可以完整编辑的中英文模板，向全队播报领取补给的情况。
 
-**Download / 下载：** [GitHub Releases](https://github.com/AdvinxCNN/DRGmod-ResupplyAnnouncer/releases/latest) · [mod.io](https://mod.io/g/drg/m/resupplyannouncer)
+**Download / 下载：** full version, this repo / 满血版（本仓库）：[GitHub Releases](https://github.com/AdvinxCNN/DRGmod-ResupplyAnnouncer/releases/latest) · pak-only Lite version / 纯 pak 的 Lite 版：[mod.io](https://mod.io/g/drg/m/resupplyannouncer)
 
-Install the zip with [mintcat](https://github.com/iris-cat-dev/mintcat) (UE4SS-Lite loader enabled). The game's built-in Modding Menu alone cannot load this mod.
+Install the full version's zip with [mintcat](https://github.com/iris-cat-dev/mintcat) (UE4SS-Lite loader enabled); the game's built-in Modding Menu alone cannot load it. The Lite version on mod.io is subscribed to in the Modding Menu.
 
-请用 [mintcat](https://github.com/iris-cat-dev/mintcat)（开启 UE4SS-Lite 加载器）安装 zip；仅靠游戏内置 Modding Menu 无法加载本模组。
+满血版请用 [mintcat](https://github.com/iris-cat-dev/mintcat)（开启 UE4SS-Lite 加载器）安装 zip，仅靠游戏内置 Modding Menu 无法加载；mod.io 上的 Lite 版在 Modding Menu 里订阅即可。
 
 ---
 
@@ -19,7 +19,7 @@ Announce resupply pickups to the team with a fully editable message template. In
 ### Requirements and installation
 
 - Deep Rock Galactic, Windows 64-bit.
-- **mintcat with its UE4SS-Lite / UE4SSL native-mod loader enabled.** This archive contains both `ResupplyAnnouncer.pak` and `main.dll` at the root. Install the complete zip through mintcat, for example by adding this mod's mod.io page link in mintcat; do not extract just the pak.
+- **mintcat with its UE4SS-Lite / UE4SSL native-mod loader enabled.** This archive contains both `ResupplyAnnouncer.pak` and `main.dll` at the root. Download the zip from GitHub Releases and add the complete zip in mintcat; do not extract just the pak. The mod.io page is the separate Lite version (see below), not this one.
 - **ModHub** for the settings page.
 - Only the host needs to install this mod; teammates receive normal in-game chat messages.
 - This is a native-loader mod, not a pak-only mod for the game's built-in Modding Menu. Subscribing through that menu alone does not load `main.dll`, so the announcements will not work.
@@ -56,10 +56,14 @@ Send test message uses sample values (Engineer Karl, 2 personal pickups out of 8
 
 Settings are stored locally in `FSD/Saved/SaveGames/Mods/ResupplyAnnouncer/ResupplyAnnouncer.ini`.
 
+### Lite version on mod.io
+
+ResupplyAnnouncer Lite is a pak-only version without the DLL: subscribe to it in the game's Modding Menu, no mintcat or UE4SS needed. It finds supply pods with a periodic scan and keeps its own settings. If both versions are installed, Lite stays silent and this version announces.
+
 ### Links
 
 - mintcat (mod manager with the native-mod loader): https://github.com/iris-cat-dev/mintcat
-- GitHub (downloads and documentation): https://github.com/AdvinxCNN/DRGmod-ResupplyAnnouncer
+- ResupplyAnnouncer Lite (pak-only, mod.io): https://mod.io/g/drg/m/resupplyannouncer
 
 ---
 
@@ -70,7 +74,7 @@ Settings are stored locally in `FSD/Saved/SaveGames/Mods/ResupplyAnnouncer/Resup
 ### 依赖与安装
 
 - 深岩银河 Windows 64 位版。
-- **mintcat，并启用其 UE4SS-Lite / UE4SSL 原生模组加载器。** 安装包根目录包含 `ResupplyAnnouncer.pak` 和 `main.dll`，请通过 mintcat 安装整个 zip（例如在 mintcat 中添加本模组的 mod.io 页面链接），不要只取 pak。
+- **mintcat，并启用其 UE4SS-Lite / UE4SSL 原生模组加载器。** 安装包根目录包含 `ResupplyAnnouncer.pak` 和 `main.dll`，请从 GitHub Releases 下载 zip，在 mintcat 中添加整个 zip，不要只取 pak。mod.io 页面是另一个 Lite 版（见下文），不是本版本。
 - **ModHub**，用于显示设置页。
 - 只需要主机安装；队友通过游戏聊天收到播报。
 - 本模组包含原生 DLL，不是游戏内置 Modding Menu 可独立加载的纯 pak 模组；仅通过该菜单订阅不会加载 `main.dll`，播报功能不会生效。
@@ -109,7 +113,11 @@ Settings are stored locally in `FSD/Saved/SaveGames/Mods/ResupplyAnnouncer/Resup
 
 配置位于 `FSD/Saved/SaveGames/Mods/ResupplyAnnouncer/ResupplyAnnouncer.ini`。
 
+### mod.io 上的 Lite 版
+
+ResupplyAnnouncer Lite 是不带 DLL 的纯 pak 版：在游戏内 Modding Menu 订阅即可使用，不需要 mintcat 或 UE4SS。它靠定时扫描发现补给舱，设置与本版本互不相通。两版同时安装时 Lite 自动不播报，由本版本播报。
+
 ### 链接
 
 - mintcat（带原生模组加载器的模组管理器）：https://github.com/iris-cat-dev/mintcat
-- GitHub（下载与说明）：https://github.com/AdvinxCNN/DRGmod-ResupplyAnnouncer
+- ResupplyAnnouncer Lite（纯 pak，mod.io）：https://mod.io/g/drg/m/resupplyannouncer
